@@ -2,26 +2,98 @@
 <html lang="es">
 <head>
 <meta charset="ISO-8859-1">
-<title>Insert title here</title>
+<title>Formulario</title>
+<link rel="stylesheet" href="/css/styles.css"></link>
 </head>
-<body>
-<header>
-	<h1>Programacion Visual</h1>
-	<nav>
-		<ol>
-		<li><a href="">Inicio</a></li>
-		<li><a href="">Caracteristicas</a></li>
-		<li><a href="">Diferencias</a></li>
-		<li><a href=""></a></li>
-		
-		
-		
-		</ol>
-	
-	
-	</nav>
-
+<body class="body">
+<header class="header">
+	<h1>Que es JAVA?</h1>
+		<nav>
+			<ol>
+				<li><a href="">Definicion</a></li>
+				<li><a href="">Filosofia</a></li>
+			</ol>
+		</nav>
 </header>
-
+<main class="main">
+<h1>Formulario de datos</h1>
+<form>
+<label for="dni">DNI:</label>
+<input id="dni" type="number" required placeholder="Ingrese el Dni en numeros" name="dni"></input><br>
+<label for="nombres">Nombres:</label>
+<input id="nombres" type="text" required placeholder="Ingrese su nombre" name="nombres"></input><br>
+<label for="apellido">Apellido:</label>
+<input id="apellido" type="text" required placeholder="Ingrese su apellido" name="apellido"></input><br>
+<label for="fechac">Fecha de Nacimiento:</label>
+<input id="fechac" type="date" required placeholder="Ingrese su Fecha de nacimiento" name="fechac"></input><br>
+<div>
+	<label for="Gmasc">Masculino:</label>
+	<input id="Gmasc" type="radio" value="X" name="genero"></input><br>
+	<label for="Gfem">Femenino:</label>
+	<input id="Gfem" type="radio" value="X" name="genero"></input><br>
+	<label for="Gx">Genero X:</label>
+	<input id="Gx" type="radio" value="X" name="genero"></input><br>
+</div>
+<label for="Correo">Correo Electronico:</label>
+<input id="Correo" type="email" value="X" name="correo" placeholder="Ingrese su email" required></input><br>
+<label for="dom">Domicilio:</label>
+<input id="dom" type="text" required placeholder="Ingrese el domicilio" name="dom"></input><br>
+<label for="prov">Provincia:</label>
+<select id="prov" name="prov" required>
+	<option value="BueAI">Buenos Aires</option>
+	<option value="Catamarca">Catamarca</option>
+	<option value="Chaco">Chaco</option>
+	<option value="Chubut">Chubut</option>
+	<option value="Cordoba">Cordoba</option>
+	<option value="Corrientes">Corrientes</option>
+	<option value="EntreRios">Entre Rios</option>
+	<option value="Formosa">Formosa</option>
+	<option value="Jujuy">Jujuy</option>
+	<option value="Lapampa">La Pampa</option>
+	<option value="Larioja">La Rioja</option>
+	<option value="Mendoza">Mendoza</option>
+	<option value="Misiones">Misiones</option>
+	<option value="Neuquen">Neuquen</option>
+	<option value="RioN">Rio Negro</option>
+	<option value="Salta" selected>Salta</option>
+	<option value="SanLu">San Luis</option>
+	<option value="SanJu">San Juan</option>
+	<option value="SantC">Santa Cruz</option>
+	<option value="SantF">Santa Fe</option>
+	<option value="Santi">Santiago del Estero</option>
+	<option value="Tierra">Tierro del Fuego</option>
+	<option value="Tucuman">Tucuman</option>
+</select><br>
+<label for="Telefon">Telefono Celular</label>
+<input id="Interes" type="number" required placeholder="Ingrese un numero de telefono" name="Telefon"></input><br>
+<label>Categorias de Interes:</label>
+<div>
+	<label for="Interes">Futbol:</label>
+	<input id="Interes" type="checkbox" name="Interes"></input><br>
+	<label for="Interes">Gastronomia:</label>
+	<input id="Interes" type="checkbox" name="Interes"></input><br>
+	<label for="Interes">Turismo:</label>
+	<input id="Interes" type="checkbox" name="Interes"></input><br>
+</div><br>
+<label for="Sugere">Sugerencias:</label><br>
+<textarea id="Sugere" placeholder="Ingrese un comentario" name="Sugere" rows="8" cols="40"></textarea><br>
+<label for="password">Contrasenia:</label>
+<input id="password" type="password" required placeholder="Ingrese la contrasenia" name="password" maxlength="10" minlength="4"></input><br>
+<label for="passwordDenuevo">Contrasenia:</label>
+<input id="passwordDenuevo" type="password" required placeholder="Ingrese la contrasenia nuevamente" name="passwordDenuevo" maxlength="10" minlength="4"></input><br>
+<label for="t&c">He leido y acepto las condiciones de la politica de privacidad:</label>
+<input id="t&c" type="checkbox" required name="t&c"></input><br>
+<label for="informacionRelativa">Acepto recibir comunicaciones comerciales del organizador:</label>
+<input id="informacionRelativa" type="checkbox" name="InfRel"></input><br>
+<input type="submit" value="Guardar">
+<input type="button" value="Cancelar"><br>
+</form>
+</main>
+<footer class="footer2">
+    <div>
+    		<p>Sitio Oficial de Java:</p>
+			<a href="https://www.oracle.com/java/"><img src="https://logowik.com/content/uploads/images/731_java.jpg" alt="Logo de Java" width="200" height="200"></a>
+	</div>
+</footer>
 </body>
 </html>
